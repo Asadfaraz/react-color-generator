@@ -1,9 +1,10 @@
 import "./App.css";
+import Generator from "./components/Generator";
 
 function App() {
   return (
     <div className="App">
-      <h2>Color Generator</h2>
+      <Generator />
     </div>
   );
 }
