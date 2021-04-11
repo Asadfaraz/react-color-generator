@@ -7,7 +7,7 @@ const Generator = () => {
   //   useState for value of input
   const [inputValue, setInputValue] = useState("");
   const [isError, setIsError] = useState(false);
-  const [colors, setcolors] = useState([]);
+  const [colors, setcolors] = useState(new Values("#f15025").all(10));
 
   // Function when input focus
   const inputFocus = () => {
@@ -45,7 +45,7 @@ const Generator = () => {
         <form className={classes.inputSec}>
           <input
             type="text"
-            placeholder="#26C485"
+            placeholder="#f15025"
             value={inputValue}
             onFocus={inputFocus}
             onChange={inputColorChange}

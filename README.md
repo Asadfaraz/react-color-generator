@@ -11,3 +11,5 @@ To Generate a color light and dark shades I value.js npm package which take hex 
 and return colors with percentage. To know more about value.js please see this [values.js](https://github.com/noeldelgado/values.js).
 
 For latest technology updates and innovations please see [The Paper House](https://theepaperhouse.com/)
+
+**See the App Live:** https://colors-asad.netlify.app/
