@@ -60,19 +60,9 @@ const Generator = () => {
 
       {/* mapping on colors array */}
       <section className={classes.colors}>
-        {/* {colors.map((colr, index) => {
-          const { rgb, weight, hex } = colr;
-          let rgbToReal = rgb.join(",");
-          let completeColor = `rgb(${rgbToReal})`;
-          let hexColor = `#${hex}`;
-          return (
-            <section key={index} style={{ backgroundColor: completeColor }}>
-              <p>{weight}%</p>
-              <p>{hexColor}</p>
-            </section>
-          );
-        })} */}
-        <ColorSection colors={colors} />
+        {colors.map((color, index) => {
+          return <ColorSection key={index} color={color} index={index} />;
+        })}
       </section>
     </main>
   );
